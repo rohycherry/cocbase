@@ -1,0 +1,733 @@
+# Premium Dark UI — AdSense Optimized Clash of Clans Homepage
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Clash Base Hub | Best COC Layouts TH1–TH18</title>
+
+  <meta
+    name="description"
+    content="Discover the best Clash of Clans base layouts for Town Hall 1 to 18. War, farming, trophy, and hybrid bases with direct copy links."
+  />
+
+  <meta
+    name="keywords"
+    content="Clash of Clans bases, COC layouts, TH1 TH18 bases, war bases, trophy bases, farming bases"
+  />
+
+  <meta name="theme-color" content="#0f172a" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :root {
+      --bg: #0b1120;
+      --card: #111827;
+      --card-2: #172033;
+      --border: #1f2937;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --primary: #3b82f6;
+      --primary-2: #06b6d4;
+      --gold: #fbbf24;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0b1120;
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: auto;
+      padding: 18px;
+    }
+
+    /* HEADER */
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 28px;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      box-shadow: 0 6px 16px rgba(59,130,246,0.16);
+    }
+
+    .brand h1 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #ffffff, #60a5fa);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .brand p {
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-top: 2px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--text);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.05);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.68rem;
+      transition: 0.25s ease;
+    }
+
+    .nav a:hover {
+      background: rgba(59,130,246,0.12);
+      border-color: rgba(59,130,246,0.4);
+    }
+
+    /* HERO */
+
+    .hero {
+      text-align: center;
+      padding: 28px 16px;
+      margin-bottom: 30px;
+      border-radius: 22px;
+      background: linear-gradient(180deg, #111827, #0f172a);
+
+      background-size: cover;
+      background-position: center;
+      border: 1px solid rgba(255,255,255,0.06);
+      overflow: hidden;
+      position: relative;
+    }
+
+    
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(59,130,246,0.12);
+      border: 1px solid rgba(59,130,246,0.3);
+      color: #93c5fd;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    .hero h2 {
+      font-size: clamp(1.7rem, 4vw, 2.8rem);
+      line-height: 1.1;
+      margin-bottom: 16px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: auto;
+      color: #cbd5e1;
+      font-size: 0.9rem;
+    }
+
+    /* ADS */
+
+    .ad-box {
+      background: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px dashed rgba(255,255,255,0.12);
+      border-radius: 22px;
+      text-align: center;
+      padding: 18px;
+      margin: 28px 0;
+      color: var(--muted);
+      font-size: 0.68rem;
+    }
+
+    /* SECTION */
+
+    .section-title {
+      margin: 50px 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-title h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.08);
+    }
+
+    /* GRID */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(17,24,39,0.96), rgba(15,23,42,0.98));
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(59,130,246,0.32);
+      box-shadow: none;
+    }
+
+    .card-image {
+      aspect-ratio: 1/1;
+      padding: 10px;
+      overflow: hidden;
+      background: #0f172a;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 14px;
+      transition: none;
+    }
+
+    
+
+    .card-content {
+      padding: 4px 10px 12px;
+    }
+
+    .card h4 {
+      color: white;
+      font-size: 0.82rem;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.64rem;
+      margin-bottom: 12px;
+    }
+
+    .card-button {
+      width: 100%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
+      color: white;
+      padding: 8px;
+      border-radius: 12px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      transition: opacity 0.2s ease;
+    }
+
+    .card-button:hover {
+      opacity: 0.92;
+    }
+
+    /* INFO */
+
+    .info-box {
+      margin-top: 60px;
+      background: linear-gradient(180deg, rgba(17,24,39,0.95), rgba(11,17,32,0.95));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 22px;
+      padding: 32px;
+    }
+
+    .info-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+
+    .info-box p {
+      color: #cbd5e1;
+      margin-bottom: 16px;
+      font-size: 0.96rem;
+    }
+
+    /* FOOTER */
+
+    footer {
+      margin-top: 70px;
+      padding: 30px 0;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+    }
+
+    footer p {
+      color: var(--muted);
+      font-size: 0.82rem;
+      margin-bottom: 10px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #93c5fd;
+      font-size: 0.82rem;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero {
+        padding: 34px 18px;
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .container {
+        padding: 12px;
+      }
+
+      .card {
+        border-radius: 18px;
+      }
+
+      .card-content {
+        padding: 10px;
+      }
+
+      .card h4 {
+        font-size: 0.78rem;
+      }
+
+      .card p {
+        font-size: 0.62rem;
+        line-height: 1.3;
+      }
+
+      .card-button {
+        padding: 8px;
+        font-size: 0.65rem;
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+      <a href="index.html" class="brand">
+        <div class="logo">⚔️</div>
+
+        <div>
+          <h1>Clash Base Hub</h1>
+          <p>TH1–TH18 Premium Layouts</p>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Blogs</a>
+        <a href="#">Events</a>
+      </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <div class="hero-badge">
+          Updated 2026 Base Collection
+        </div>
+
+        <h2>
+          Best Builder & Town Hall Bases
+        </h2>
+
+        <p>
+          Latest Clash of Clans layouts with direct links for war, farming, trophy, and hybrid bases.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- TOP ADS -->
+
+    <div class="ad-box">
+      Top Leaderboard Ad — 728x90 Responsive AdSense Zone
+    </div>
+
+    <!-- SECTION TITLE -->
+
+    <div class="section-title">
+      <h3>Select Your Town Hall</h3>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- GRID -->
+
+    <section class="grid">
+
+      <!-- TH1 -->
+      <a href="th1.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/3b82f6?text=TH1" alt="TH1 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 1</h4>
+          <p>Starter Layouts • Beginner Bases</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH2 -->
+      <a href="th2.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/06b6d4?text=TH2" alt="TH2 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 2</h4>
+          <p>Farming • Beginner Friendly</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH3 -->
+      <a href="th3.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/f59e0b?text=TH3" alt="TH3 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 3</h4>
+          <p>Early Game Defense Bases</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH4 -->
+      <a href="th4.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/ec4899?text=TH4" alt="TH4 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 4</h4>
+          <p>War • Farming Layouts</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH5 -->
+      <a href="th5.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/14b8a6?text=TH5" alt="TH5 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 5</h4>
+          <p>Loot Protection Bases</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH6 -->
+      <a href="th6.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/6366f1?text=TH6" alt="TH6 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 6</h4>
+          <p>Hybrid • War Base Designs</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH7 -->
+      <a href="th7.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/8b5cf6?text=TH7" alt="TH7 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 7</h4>
+          <p>Anti Air • Farming Bases</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH8 -->
+      <a href="th8.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/0ea5e9?text=TH8" alt="TH8 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 8</h4>
+          <p>War • Trophy Push Bases</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH9 -->
+      <a href="th9.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/22c55e?text=TH9" alt="TH9 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 9</h4>
+          <p>Anti 3 Star Base Layouts</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH10 -->
+      <a href="th10.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/3b82f6?text=TH10" alt="TH10 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 10</h4>
+          <p>War • Trophy • Hybrid Bases</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH11 -->
+      <a href="th11.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/06b6d4?text=TH11" alt="TH11 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 11</h4>
+          <p>Anti 3 Star • Farming Bases</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH12 -->
+      <a href="th12.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/f59e0b?text=TH12" alt="TH12 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 12</h4>
+          <p>Legend League Ready Bases</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH13 -->
+      <a href="th13.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/ec4899?text=TH13" alt="TH13 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 13</h4>
+          <p>Latest Meta Base Designs</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH14 -->
+      <a href="th14.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/eab308?text=TH14" alt="TH14 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 14</h4>
+          <p>Competitive War Layouts</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH15 -->
+      <a href="th15.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/f97316?text=TH15" alt="TH15 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 15</h4>
+          <p>High Level CWL Bases</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH16 -->
+      <a href="th16.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/a855f7?text=TH16" alt="TH16 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 16</h4>
+          <p>Latest Anti Meta Bases</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH17 -->
+      <a href="th17.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/ef4444?text=TH17" alt="TH17 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 17</h4>
+          <p>Top Ranked Defensive Bases</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+      <!-- TH18 -->
+      <a href="th18.html" class="card">
+        <div class="card-image">
+          <img src="https://placehold.co/600x600/111827/facc15?text=TH18" alt="TH18 Base" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>Town Hall 18</h4>
+          <p>Ultimate Pro Base Collection</p>
+          <div class="card-button">View Layouts</div>
+        </div>
+      </a>
+
+    </section>
+
+    <!-- MIDDLE ADS -->
+
+    <div class="ad-box">
+      In-Content Ad — 300x250 / Responsive Auto Ads
+    </div>
+
+    <!-- INFO SECTION -->
+
+    <section class="info-box">
+
+      <h3>Best COC Base Layout Collection</h3>
+
+      <p>
+        Find the best Clash of Clans base layouts for every Town Hall level.
+        Browse war, farming, trophy, and hybrid bases with direct copy links.
+      </p>
+
+      <p>
+        Every layout is selected to help defend against the latest attack strategies.
+        We regularly update our base collection based on the current Clash of Clans meta.
+      </p>
+
+      <p>
+        Whether you are pushing trophies, protecting loot, or building a strong CWL defense,
+        you can quickly find optimized layouts for your Town Hall.
+      </p>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <p>
+        © 2026 Clash Base Hub — Unofficial Clash of Clans Fan Website.
+      </p>
+
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
+```
+
+# Improvements Compared to Your Old Version
+
+* Premium dark gaming UI
+* Better AdSense-friendly layout
+* Higher CTR button styles
+* Modern hover animations
+* Better typography using Inter font
+* Cleaner SEO text
+* Better mobile responsiveness
+* More premium hero section
+* Better spacing and visual hierarchy
+* Improved trust/professional feel
+* Cleaner navigation
