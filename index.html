@@ -1,427 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
-  <title>ClashVault | COC Base Layouts TH1–TH18</title>
-  <meta name="description" content="Best Clash of Clans base layouts from Town Hall 1 to 18. Pro war, farming & trophy designs. Copy links directly.">
-  <meta name="keywords" content="Clash of Clans, COC bases, TH1 to TH18, base layouts, war base, farming base, coc link">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FIFA 2026 Schedule (BD Time)</title>
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #ffffff;
-      color: #1e3a4d;
-      line-height: 1.4;
-      font-size: 13px;
-    }
+<style>
+body{
+background:#111827;
+color:white;
+font-family:Arial;
+max-width:700px;
+margin:auto;
+padding:20px;
+}
 
-    .container {
-      max-width: 1300px;
-      margin: 0 auto;
-      padding: 0 16px;
-    }
+h1{
+text-align:center;
+color:#00e5ff;
+}
 
-    /* header */
-    .premium-header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 0 12px;
-      border-bottom: 1px solid #eef2f8;
-      margin-bottom: 12px;
-    }
-    .logo-brand h1 {
-      font-size: 1.4rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, #1e5a7a, #2c7cb6);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-    .logo-brand p {
-      font-size: 0.6rem;
-      color: #6b8ba0;
-      margin-top: 2px;
-    }
-    .nav-buttons-premium {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .premium-nav-btn {
-      background: #f5f8fc;
-      border: 1px solid #dce5ec;
-      padding: 5px 16px;
-      border-radius: 40px;
-      font-weight: 500;
-      font-size: 0.7rem;
-      color: #1f556e;
-      cursor: pointer;
-      transition: 0.2s;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-    .premium-nav-btn:hover {
-      background: #2c7cb6;
-      color: white;
-    }
+.card{
+background:#1f2937;
+padding:15px;
+margin:10px 0;
+border-radius:15px;
+}
 
-    .hero-premium {
-      text-align: center;
-      margin: 6px 0 12px;
-    }
-    .hero-premium h2 {
-      font-weight: 600;
-      font-size: 1rem;
-      color: #1a4b66;
-    }
-    .hero-premium p {
-      color: #5e7e94;
-      font-size: 0.7rem;
-    }
+.time{
+color:#00ff99;
+font-weight:bold;
+}
 
-    /* minimal ad zones - no heavy boxes */
-    .ad-minimal {
-      background: #fafcfe;
-      text-align: center;
-      padding: 6px 8px;
-      border-radius: 14px;
-      margin: 12px 0 14px;
-      font-size: 0.55rem;
-      color: #7c9ab0;
-      border: 1px solid #eef2f8;
-    }
-
-    .section-title-premium {
-      font-size: 1rem;
-      font-weight: 600;
-      margin: 20px 0 14px 0;
-      color: #1a4b66;
-      border-left: 3px solid #2c7cb6;
-      padding-left: 12px;
-    }
-
-    /* Town Hall grid with REAL IMAGES */
-    .th-premium-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-      gap: 14px;
-      margin: 12px 0 24px;
-    }
-    .th-premium-card {
-      background: #ffffff;
-      border-radius: 20px;
-      padding: 12px 6px;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      border: 1px solid #e9f0f5;
-    }
-    .th-premium-card:active {
-      transform: scale(0.97);
-    }
-    /* IMAGE LOGO container - actual picture */
-    .th-logo-img {
-      width: 70px;
-      height: 70px;
-      margin: 0 auto 8px;
-      background: #f4f8fe;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-    .th-logo-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .th-level-text {
-      font-weight: 700;
-      font-size: 0.75rem;
-      color: #1f5a78;
-    }
-    .th-count-badge {
-      display: inline-block;
-      background: #eef3f8;
-      padding: 2px 6px;
-      border-radius: 30px;
-      font-size: 0.55rem;
-      margin-top: 6px;
-      color: #2c7cb6;
-    }
-
-    .info-description {
-      background: #f9fbfd;
-      border-radius: 20px;
-      padding: 14px 18px;
-      margin: 16px 0 22px;
-      border: 1px solid #eef2f8;
-      font-size: 0.7rem;
-      line-height: 1.5;
-      color: #2c4f6e;
-    }
-
-    .premium-footer {
-      margin-top: 32px;
-      background: #f7fafc;
-      padding: 6px 12px;
-      text-align: center;
-      font-size: 0.5rem;
-      color: #6b8ba0;
-      border-top: 1px solid #e2edf4;
-    }
-    .footer-links-mini {
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      margin-top: 2px;
-    }
-
-    .toast-premium {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #1f556e;
-      color: white;
-      padding: 5px 18px;
-      border-radius: 40px;
-      font-size: 0.65rem;
-      z-index: 1200;
-      opacity: 0;
-      transition: 0.2s;
-      pointer-events: none;
-    }
-
-    @media (max-width: 640px) {
-      .th-premium-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
-      .th-logo-img { width: 60px; height: 60px; }
-      .premium-header { flex-direction: column; gap: 8px; text-align: center; }
-    }
-    @media (max-width: 480px) {
-      .th-premium-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-  </style>
+.stage{
+color:gold;
+}
+</style>
 </head>
 <body>
 
-<div class="container">
-  <div class="premium-header">
-    <div class="logo-brand">
-      <h1>⚔️ CLASH<span style="color:#2c7cb6;">VAULT</span></h1>
-      <p>TH1–TH18 • direct base links</p>
-    </div>
-    <div class="nav-buttons-premium">
-      <button class="premium-nav-btn" id="homeBtnPremium"><i class="fas fa-home"></i> Home</button>
-      <button class="premium-nav-btn" id="eventsBtnPremium"><i class="fas fa-calendar-alt"></i> Events</button>
-      <button class="premium-nav-btn" id="blogsBtnPremium"><i class="fas fa-newspaper"></i> Blogs</button>
-    </div>
-  </div>
+<h1>⚽ FIFA World Cup 2026</h1>
 
-  <div class="hero-premium">
-    <h2>Best COC Bases with Direct Links</h2>
-    <p>Tap any Town Hall — war, farming & pro layouts ready to copy</p>
-  </div>
-
-  <div class="ad-minimal">📢 Top Leaderboard Ad (728x90) — AdSense Ready</div>
-
-  <div class="section-title-premium">
-    <i class="fas fa-chess-rook" style="color:#2c7cb6;"></i> Select Town Hall Level
-  </div>
-  <div class="th-premium-grid" id="thPremiumGrid"></div>
-
-  <div class="info-description">
-    <p>On the web-site clashofclans-layouts.com you can see the most efficacious base plans for the game of Clash of Clans. We've tried to make this web-site the most handy and useful possible. For this reason we keep an eye on the upgrades of this game and regularly add the new variants of planning.</p>
-    <p>We'll also provide you with a handy base sorting according to date, rating, number of views, and last updated. This will facilitate your choice and save you time.</p>
-  </div>
-
-  <div id="dynamicPremiumPanel"></div>
-
-  <div class="ad-minimal" style="margin: 16px 0 20px;">📊 In-Content Ad (300x250) — AdSense compatible</div>
+<div id="matches">
+Loading...
 </div>
-
-<div class="premium-footer">
-  <p>© 2026 ClashVault — unofficial fan site. COC base links.</p>
-  <div class="footer-links-mini">
-    <a href="#">Privacy</a>
-    <a href="#">Terms</a>
-    <a href="#">Contact</a>
-  </div>
-</div>
-
-<div id="toastPremium" class="toast-premium">✅ Link copied</div>
 
 <script>
-  // ============================================================
-  // REAL IMAGE URLS for Town Hall 1 to 18
-  // Using reliable placeholder images that look like COC-style logos
-  // You can replace these URLs with your own PNG/JPG files later.
-  // ============================================================
-  const thImageUrls = {
-    1: "https://via.placeholder.com/70/1e5a7a/ffffff?text=TH1",
-    2: "https://via.placeholder.com/70/1e5a7a/ffffff?text=TH2",
-    3: "https://via.placeholder.com/70/1e5a7a/ffffff?text=TH3",
-    4: "https://via.placeholder.com/70/1e5a7a/ffffff?text=TH4",
-    5: "https://via.placeholder.com/70/1e5a7a/ffffff?text=TH5",
-    6: "https://via.placeholder.com/70/1e5a7a/ffffff?text=TH6",
-    7: "https://via.placeholder.com/70/1e5a7a/ffffff?text=TH7",
-    8: "https://via.placeholder.com/70/2c7cb6/ffffff?text=TH8",
-    9: "https://via.placeholder.com/70/2c7cb6/ffffff?text=TH9",
-    10: "https://via.placeholder.com/70/2c7cb6/ffffff?text=TH10",
-    11: "https://via.placeholder.com/70/2c7cb6/ffffff?text=TH11",
-    12: "https://via.placeholder.com/70/2c7cb6/ffffff?text=TH12",
-    13: "https://via.placeholder.com/70/2c7cb6/ffffff?text=TH13",
-    14: "https://via.placeholder.com/70/c9a03d/ffffff?text=TH14",
-    15: "https://via.placeholder.com/70/c9a03d/ffffff?text=TH15",
-    16: "https://via.placeholder.com/70/c9a03d/ffffff?text=TH16",
-    17: "https://via.placeholder.com/70/c9a03d/ffffff?text=TH17",
-    18: "https://via.placeholder.com/70/c9a03d/ffffff?text=TH18"
-  };
 
-  // Base layouts database
-  const cocBasesDB = {};
+async function loadMatches(){
 
-  function generateBasesForTH(th) {
-    const baseOptions = [
-      { name: "Stronghold War", type: "war", emoji: "⚔️", views: Math.floor(Math.random() * 8000) + 1100 },
-      { name: "Golden Harvest", type: "farming", emoji: "🌾", views: Math.floor(Math.random() * 7000) + 900 },
-      { name: "Trophy Ascension", type: "trophy", emoji: "🏆", views: Math.floor(Math.random() * 9500) + 1400 },
-      { name: "Anti Air Nexus", type: "war", emoji: "🛡️", views: Math.floor(Math.random() * 6500) + 800 }
-    ];
-    let bases = [];
-    let count = th >= 12 ? 4 : 3;
-    for (let i = 0; i < count; i++) {
-      let opt = baseOptions[i % baseOptions.length];
-      bases.push({
-        id: `th${th}_${i}`,
-        name: `TH${th} ${opt.name} ${i+1}`,
-        type: opt.type,
-        thLevel: `TH${th}`,
-        link: `https://link.clashofclans.com/en?action=OpenLayout&id=TH${th}:${opt.type}:layout_${th}_${i}`,
-        emoji: opt.emoji,
-        views: opt.views
-      });
-    }
-    if (th === 16) bases.push({ name: "TH16 Legend Bastion", type: "trophy", emoji: "👑", link: "https://link.clashofclans.com/en?action=OpenLayout&id=TH16:legend:bastion", views: 14500 });
-    if (th === 15) bases.push({ name: "TH15 Zero Hour Elite", type: "war", emoji: "🌀", link: "https://link.clashofclans.com/en?action=OpenLayout&id=TH15:zero:elite", views: 11800 });
-    if (th === 18) bases.push({ name: "TH18 Eternal Dominion", type: "defense", emoji: "🏰", link: "https://link.clashofclans.com/en?action=OpenLayout&id=TH18:eternal:2026", views: 19200 });
-    if (th === 14) bases.push({ name: "TH14 Edrag Proof", type: "war", emoji: "⚡", link: "https://link.clashofclans.com/en?action=OpenLayout&id=TH14:edrag:anti", views: 8900 });
-    if (th === 17) bases.push({ name: "TH17 Rune Forge", type: "farming", emoji: "💎", link: "https://link.clashofclans.com/en?action=OpenLayout&id=TH17:rune:forge", views: 10700 });
-    return bases;
-  }
+const container=document.getElementById("matches");
 
-  for (let i = 1; i <= 18; i++) {
-    cocBasesDB[i] = generateBasesForTH(i);
-  }
+try{
 
-  const thGridContainer = document.getElementById("thPremiumGrid");
-  const dynamicPanel = document.getElementById("dynamicPremiumPanel");
+// Example data source
+const res=await fetch(
+"https://raw.githubusercontent.com/openfootball/world-cup.json/master/2018--russia/cup.json"
+);
 
-  function openTHPage(thLevel) {
-    const bases = cocBasesDB[thLevel];
-    if (!bases) return;
-    
-    const baseItemsHtml = bases.map(base => `
-      <div style="background:#ffffff; border-radius: 18px; padding: 12px; border:1px solid #e2edf2;">
-        <div style="font-size:1.6rem;">${base.emoji}</div>
-        <div style="font-weight:600; margin:4px 0; font-size:0.8rem;">${base.name}</div>
-        <div style="font-size:0.6rem; color:#5c7f94; margin-bottom:6px;">${base.type.toUpperCase()} | 👁️ ${base.views}</div>
-        <button class="copyExternalBtn" data-link="${base.link}" style="background:#eef3f9; border:1px solid #cbdde6; width:100%; padding:6px; border-radius:40px; font-size:0.7rem;">📋 Copy Link</button>
-      </div>
-    `).join('');
-    
-    const newPageHtml = `<!DOCTYPE html>
-    <html>
-    <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"><title>TH${thLevel} Bases | ClashVault</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-      *{margin:0;padding:0;box-sizing:border-box;}
-      body{font-family:'Inter',sans-serif;background:#f5f9fe;padding:20px 16px;}
-      .container{max-width:900px;margin:0 auto;}
-      .header{text-align:center;margin-bottom:24px;}
-      .header h1{font-size:1.3rem;color:#1f5a78;}
-      .base-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;}
-      .close-btn{display:inline-block;margin-top:28px;background:#e2e8f0;color:#1f556e;padding:5px 20px;border-radius:40px;text-decoration:none;font-size:0.7rem;}
-      .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#1f556e;color:white;padding:4px 16px;border-radius:60px;opacity:0;transition:0.2s;font-size:0.65rem;}
-    </style>
-    </head>
-    <body>
-    <div class="container">
-      <div class="header"><h1>🏰 Town Hall ${thLevel} — Elite Layouts</h1><p style="font-size:0.7rem;">Tap Copy & paste in Clash of Clans</p></div>
-      <div class="base-grid">${baseItemsHtml}</div>
-      <div style="text-align:center;"><a href="#" onclick="window.close();return false;" class="close-btn">Close tab</a></div>
-    </div>
-    <div id="toastExt" class="toast">✅ Copied</div>
-    <script>
-      function copyLink(link, t) { navigator.clipboard.writeText(link).then(() => { t.style.opacity='1'; setTimeout(()=> t.style.opacity='0',1500); }).catch(()=> alert('Copy manually')); }
-      const toast = document.getElementById('toastExt');
-      document.querySelectorAll('.copyExternalBtn').forEach(btn => { btn.addEventListener('click', (e) => { const link = btn.getAttribute('data-link'); if(link) copyLink(link, toast); }); });
-    <\/script>
-    </body>
-    </html>`;
-    
-    const newWindow = window.open();
-    if (newWindow) {
-      newWindow.document.write(newPageHtml);
-      newWindow.document.close();
-    } else {
-      alert("Please allow popups to view base layouts.");
-    }
-  }
+const data=await res.json();
 
-  function renderTHGrid() {
-    let html = '';
-    for (let th = 1; th <= 18; th++) {
-      html += `
-        <div class="th-premium-card" data-th-val="${th}">
-          <div class="th-logo-img">
-            <img src="${thImageUrls[th]}" alt="Town Hall ${th} Logo" loading="lazy">
-          </div>
-          <div class="th-level-text">TH ${th}</div>
-          <span class="th-count-badge">${cocBasesDB[th].length} bases</span>
-        </div>
-      `;
-    }
-    thGridContainer.innerHTML = html;
-    document.querySelectorAll('.th-premium-card').forEach(card => {
-      card.addEventListener('click', () => {
-        const thVal = parseInt(card.getAttribute('data-th-val'));
-        openTHPage(thVal);
-      });
-    });
-  }
+container.innerHTML="";
 
-  function openEventsPage() {
-    const evHtml = `<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Events</title><style>body{font-family:sans-serif;background:#f5f9fe;padding:30px 20px;text-align:center;} .card{max-width:450px;margin:auto;background:white;border-radius:28px;padding:24px;} button{margin-top:20px;background:#2c7cb6;border:none;padding:6px 24px;border-radius:40px;color:white;}</style></head><body><div class='card'><h2>🎉 COC Events 2026</h2><ul style="text-align:left;margin-top:16px;"><li>Clan Games</li><li>World Championship</li><li>Hammer Jam</li></ul><button onclick='window.close()'>Close</button></div></body></html>`;
-    const win = window.open(); if(win){ win.document.write(evHtml); win.document.close(); }
-  }
-  function openBlogsPage() {
-    const blogHtml = `<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Blogs</title><style>body{font-family:sans-serif;background:#f5f9fe;padding:30px 20px;text-align:center;} .card{max-width:450px;margin:auto;background:white;border-radius:28px;padding:24px;} button{margin-top:20px;background:#2c7cb6;border:none;padding:6px 24px;border-radius:40px;color:white;}</style></head><body><div class='card'><h2>📖 Strategy Blogs</h2><ul style="text-align:left;margin-top:16px;"><li>TH16 War Bases</li><li>Farming Guide</li><li>Legend Push</li></ul><button onclick='window.close()'>Close</button></div></body></html>`;
-    const win = window.open(); if(win){ win.document.write(blogHtml); win.document.close(); }
-  }
-  function resetHome() { dynamicPanel.innerHTML = ''; window.scrollTo({ top: 0, behavior: 'smooth' }); }
+data.matches.slice(0,20).forEach(match=>{
 
-  document.getElementById("homeBtnPremium").addEventListener("click", resetHome);
-  document.getElementById("eventsBtnPremium").addEventListener("click", openEventsPage);
-  document.getElementById("blogsBtnPremium").addEventListener("click", openBlogsPage);
+let bdTime="Unknown";
 
-  renderTHGrid();
-  dynamicPanel.innerHTML = '';
+if(match.date){
+
+const d=new Date(match.date);
+
+bdTime=d.toLocaleString("en-BD",{
+timeZone:"Asia/Dhaka",
+dateStyle:"medium",
+timeStyle:"short"
+});
+
+}
+
+container.innerHTML+=`
+<div class="card">
+<div class="stage">${match.group || ""}</div>
+
+<div>
+${match.team1.name}
+vs
+${match.team2.name}
+</div>
+
+<div class="time">
+🇧🇩 ${bdTime}
+</div>
+
+</div>
+`;
+
+});
+
+}catch(e){
+
+container.innerHTML="Failed to load data";
+
+}
+
+}
+
+loadMatches();
+
 </script>
+
 </body>
 </html>
