@@ -2,7 +2,7 @@ import json
 import requests
 
 # OpenFootball source (change if needed)
-URL = "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026--worldcup/cup.json"
+URL = "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json"
 
 try:
     response = requests.get(URL)
