@@ -1,113 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FIFA 2026 Schedule (BD Time)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIFA World Cup 2026 - Bangladesh Time</title>
 
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-background:#111827;
-color:white;
-font-family:Arial;
-max-width:700px;
-margin:auto;
-padding:20px;
+    background:#0f172a;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
 }
 
 h1{
-text-align:center;
-color:#00e5ff;
+    text-align:center;
+    margin-bottom:10px;
+    color:#38bdf8;
 }
 
-.card{
-background:#1f2937;
-padding:15px;
-margin:10px 0;
-border-radius:15px;
+.subtitle{
+    text-align:center;
+    color:#94a3b8;
+    margin-bottom:30px;
 }
 
-.time{
-color:#00ff99;
-font-weight:bold;
+.match-card{
+    background:#1e293b;
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:15px;
+    box-shadow:0 0 10px rgba(255,255,255,.1);
 }
 
 .stage{
-color:gold;
+    color:#fbbf24;
+    margin-bottom:10px;
+    font-size:14px;
+}
+
+.teams{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.time{
+    color:#22c55e;
+}
+
+.loading{
+    text-align:center;
+    color:#94a3b8;
 }
 </style>
 </head>
 <body>
 
+<div class="container">
+
 <h1>⚽ FIFA World Cup 2026</h1>
+<div class="subtitle">
+Bangladesh Time (GMT+6)
+</div>
 
 <div id="matches">
-Loading...
-</div>
 
-<script>
-
-async function loadMatches(){
-
-const container=document.getElementById("matches");
-
-try{
-
-// Example data source
-const res=await fetch(
-"https://raw.githubusercontent.com/openfootball/world-cup.json/master/2018--russia/cup.json"
-);
-
-const data=await res.json();
-
-container.innerHTML="";
-
-data.matches.slice(0,20).forEach(match=>{
-
-let bdTime="Unknown";
-
-if(match.date){
-
-const d=new Date(match.date);
-
-bdTime=d.toLocaleString("en-BD",{
-timeZone:"Asia/Dhaka",
-dateStyle:"medium",
-timeStyle:"short"
-});
-
-}
-
-container.innerHTML+=`
-<div class="card">
-<div class="stage">${match.group || ""}</div>
-
-<div>
-${match.team1.name}
-vs
-${match.team2.name}
-</div>
-
-<div class="time">
-🇧🇩 ${bdTime}
+<div class="loading">
+Loading matches...
 </div>
 
 </div>
-`;
 
-});
+</div>
 
-}catch(e){
-
-container.innerHTML="Failed to load data";
-
-}
-
-}
-
-loadMatches();
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
