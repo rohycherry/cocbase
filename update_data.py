@@ -8,13 +8,5 @@ response.raise_for_status()
 
 source = response.json()
 
-print("TYPE:", type(source))
-
-# পুরো data print করবে
+print(type(source))
 print(source)
-
-# আপাতত খালি matches.json তৈরি করবে
-with open("matches.json", "w", encoding="utf-8") as f:
-    json.dump({"matches": []}, f, indent=2)
-
-print("Done")
