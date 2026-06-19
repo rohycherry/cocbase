@@ -11,6 +11,7 @@ source = response.json()
 matches = []
 
 source["matches"].sort(key=lambda x: (x["date"], x.get("time", "")))
+
 for m in source["matches"]:
 
     stage = m.get("group", m.get("round", "World Cup"))
